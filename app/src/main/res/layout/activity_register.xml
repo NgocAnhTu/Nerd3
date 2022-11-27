@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="Đăng ký đồng nghĩa với việc bạn đồng ý tuân thủ theo Điều khoản của Nerd"
             android:textAlignment="center"
-            android:textColor="#42C2FF" />
+            android:textColor="#000000" />
 
         <TableLayout
             android:layout_width="wrap_content"
