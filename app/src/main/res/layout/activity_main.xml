@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        android:background="#1B4965"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/imv_avatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avt1"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xin chào"
+                    android:gravity="top" />
+
+                <TextView
+                    android:id="@+id/txt_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Ngọc Anh Từ"
+                    android:textColor="#1B4965"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="top" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bell"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle">
+
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="145dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/course"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="NỀN TẢNG TIẾNG ANH"
+                    android:textColor="#1B4965"
+                    android:textStyle="bold"
+                    android:gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 tháng • 15 bài học"
+                    android:textColor="#1B4965"
+                    android:gravity="center_horizontal|center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tientrinh"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recghichu">
+
+            <ImageView
+                android:id="@+id/imv_ghichu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ghichu"/>
+            <TextView
+                android:id="@+id/txt_ghichu"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Ghi chú"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baitap"/>
+            <TextView
+                android:id="@+id/b_i_t_p"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Bài tập"
+                android:paddingLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dangkythi"/>
+            <TextView
+                android:id="@+id/ng_k_thi"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Đăng ký thi"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khóa học mới"
+                android:textColor="#1B4965"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#EAEAEA"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:id="@+id/imbCourse1"
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd5"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/imb_Course2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/nerd7"
+                    android:scaleType="centerCrop"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/imb_Course3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nerd8"
+                    android:scaleType="centerCrop"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/giaovien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1B4965"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Giáo viên hàng đầu"
+                android:layout_marginBottom="10dp"
+                android:gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd9"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp"/>
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd10"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp"/>
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd11"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1B4965"
+                android:textStyle="bold"
+                android:text="Blog"
+                android:textSize="20dp"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd15"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp" />
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd15"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:layout_marginRight="10dp"/>
+                <ImageButton
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nerd15"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

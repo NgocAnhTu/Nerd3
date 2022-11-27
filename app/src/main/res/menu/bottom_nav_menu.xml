@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepage"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HomePage"/>
+    <item
+        android:id="@+id/courses"
+        android:icon="@drawable/ic_baseline_shop_two_24"
+        android:title="Courses"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_baseline_calendar_month_24"
+        android:title="Calendars"/>
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+</menu>
